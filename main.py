@@ -158,13 +158,13 @@ def main():
     sizes = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
     
     # sample grid kecil
-    print("Contoh pencarian dalam grid 5x5:")
+    print("sample finding grid 5x5:")
     small_grid = create_grid(5, word)
     print("\nGrid:")
     print_grid(small_grid)
     
     found_iter, pos_iter = search_iterative(small_grid, word)
-    print(f"\nHasil pencarian iteratif: {'Ditemukan' if found_iter else 'Tidak ditemukan'}")
+    print(f"\nHasil finding iteratif: {'found' if found_iter else 'not found'}")
     if found_iter:
         print(f"Posisi awal: {pos_iter}")
     
@@ -179,7 +179,7 @@ def main():
     
     # create plot
     plot_performance(results)
-    print("\nPlot performa telah disimpan sebagai 'performance_comparison.png'")
+    print("\nPlot performa telah tersimpan'performance_comparison.png'")
 
 if __name__ == "__main__":
     main()
